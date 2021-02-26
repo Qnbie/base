@@ -15,6 +15,10 @@ public class TrainSensorImpl implements TrainSensor {
 		this.user = user;
 	}
 
+	public TrainSensorImpl(){
+
+	}
+
 	@Override
 	public int getSpeedLimit() {
 		return speedLimit;
