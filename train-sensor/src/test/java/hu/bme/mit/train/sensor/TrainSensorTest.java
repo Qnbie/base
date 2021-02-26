@@ -23,11 +23,7 @@ public class TrainSensorTest {
 
     }
 
-    /*@Test
-    public void CutomTest() {
-        trainSensor.overrideSpeedLimit(10);
-        assertEquals(10, trainSensor.getSpeedLimit());
-    }*/
+
 
 
 }

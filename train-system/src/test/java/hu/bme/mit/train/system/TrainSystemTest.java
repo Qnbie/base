@@ -9,6 +9,8 @@ import hu.bme.mit.train.interfaces.TrainSensor;
 import hu.bme.mit.train.interfaces.TrainUser;
 import hu.bme.mit.train.system.TrainSystem;
 
+import static org.junit.Assert.assertEquals;
+
 public class TrainSystemTest {
 
 	TrainController controller;
@@ -38,7 +40,7 @@ public class TrainSystemTest {
 		controller.followSpeed();
 		Assert.assertEquals(10, controller.getReferenceSpeed());
 		controller.followSpeed();
-		Assert.assertEquals(-10, controller.getReferenceSpeed());
+		Assert.assertEquals(10, controller.getReferenceSpeed());
 	}
 
 	@Test
@@ -50,5 +52,10 @@ public class TrainSystemTest {
 		Assert.assertEquals(0, controller.getReferenceSpeed());
 	}
 
-	
+	@Test
+	public void CutomTest() {
+		sensor.overrideSpeedLimit(10);
+		assertEquals(10, sensor.getSpeedLimit());
+	}
+
 }
