@@ -27,7 +27,7 @@ public class TrainSensorImpl implements TrainSensor {
 	}
 
 	public void printSpeed(){
-		System.out.println(speedLimit+3);
+		System.out.println(speedLimit+9);
 	}
 
 }
