@@ -19,10 +19,10 @@ public class tachographtest {
     public void basicTest(){
 
 
-        tachographunit.addEntry(new Date(System.currentTimeMillis()), 0.5f, 0.6f);
-        tachographunit.addEntry(new Date(System.currentTimeMillis()), 0.5f, 0.6f);
-        tachographunit.addEntry(new Date(System.currentTimeMillis()), 0.5f, 0.6f);
+        tachographunit.put(new Date(System.currentTimeMillis()), 0.5f, 0.6f);
+        tachographunit.put(new Date(System.currentTimeMillis()), 0.5f, 0.6f);
+        tachographunit.put(new Date(System.currentTimeMillis()), 0.5f, 0.6f);
 
-        Assert.assertEquals(3, tachographunit.getSize());
+        Assert.assertEquals(3, tachographunit.size());
     }
 }
